@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    # 测试库独立于开发库（travel_share），首次连接自动建库；建表与种子脚本与开发库同一份。
+    url: jdbc:mysql://127.0.0.1:3307/travel_share_test?createDatabaseIfNotExist=true&useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai&useSSL=false&allowPublicKeyRetrieval=true
+  sql:
+    init:
+      mode: always
+      schema-locations: classpath:db/schema.sql
+      data-locations: classpath:db/seed.sql
+
+app:
+  # 测试上传目录与开发目录分离，跑完的垃圾文件不留在 ./uploads。
+  upload-dir: ./target/test-uploads
+  jwt:
+    secret: travel-share-test-jwt-secret-key-for-integration-tests-2026
+    expire-hours: 2
