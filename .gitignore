@@ -1,0 +1,31 @@
+# ---- Java / Maven ----
+backend/target/
+*.class
+*.jar
+!backend/.mvn/wrapper/maven-wrapper.jar
+
+# ---- Node / Vite ----
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+npm-debug.log*
+pnpm-debug.log*
+
+# ---- IDE ----
+.idea/
+*.iml
+.vscode/
+*.swp
+
+# ---- DSH 工具产物（技能包副本、写入探针）----
+.dsh/
+.dsh-write-probe
+.scratch/.dsh-write-probe
+
+# ---- OS / misc ----
+.DS_Store
+Thumbs.db
+*.log
+.env
+.env.*
+*.local

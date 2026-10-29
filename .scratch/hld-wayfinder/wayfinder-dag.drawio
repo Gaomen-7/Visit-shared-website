@@ -1,0 +1,94 @@
+<mxfile host="dsh-drawai" agent="dsh-drawai" type="device">
+  <diagram id="dsh-drawai-page-1" name="Page-1">
+    <mxGraphModel dx="0" dy="0" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="n1" value="hld.md（草案 v1.0）→ 实施就绪 · Wayfinder 候选目标依赖 DAG — 2026-10-29" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;fillColor=none;strokeColor=none;text=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="0" y="0" width="300" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="n2" value="图例
+蓝=research·AFK　紫=grilling·HITL　橙=task　绿=终点
+实线箭头指向被阻塞方：先清上游；虚线=迷雾毕业/后置裁决
+范围外：P2 全部 · 实施切片与施工票编排（下一效程） · 论文成文" style="whiteSpace=wrap;fillColor=#f5f5f5;strokeColor=#666666;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="0" width="420" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="n3" value="★ G1 · research（AFK）
+《完善方案》× 确认链一致性审计
+产出冲突清单 + 裁决建议" style="rounded=1;whiteSpace=wrap;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=3;" vertex="1" parent="1">
+          <mxGeometry x="800" y="0" width="300" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="n4" value="G3 · task（AFK）
+Node/npm 工具链实测
+并回写 DEV-ENVIRONMENT.md" style="rounded=1;whiteSpace=wrap;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="1140" y="0" width="280" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="n5" value="G2 · grilling（HITL）
+HLD v1.0 定案项拷问与批复
+（含 Knife4j 未挂 HLD §2.2 的缺口）" style="rounded=1;whiteSpace=wrap;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="390" y="210" width="300" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="n6" value="G4 · task（AFK）
+前后端工程骨架
++ /api 代理冒烟" style="rounded=1;whiteSpace=wrap;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="910" y="390" width="280" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="n7" value="G5 · grilling（HITL）
+留白①：user 侧我的发布/
+聚合三列表接口明细定案" style="rounded=1;whiteSpace=wrap;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="230" y="390" width="300" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="n8" value="G6 · grilling（HITL）
+留白②：destination + 首页
+四区块取数接口明细定案" style="rounded=1;whiteSpace=wrap;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="570" y="390" width="300" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="n9" value="终点 · 地图走完
+实施就绪：批复 · 链对齐 · 留白补齐 · 骨架立起
+→ 交接施工票 / create-plan" style="rounded=1;arcSize=50;whiteSpace=wrap;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="520" y="570" width="380" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="n10" value="迷雾 · 由 G1 结果毕业
+新冲突 → 新票
+（接口语义 / 依赖细节 / 进度对齐）" style="whiteSpace=wrap;fillColor=#f5f5f5;strokeColor=#666666;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="730" y="210" width="300" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="n11" value="迷雾 · P1 是否进毕设时间盒
+（Redis / 楼中楼 / 轻量分析）
+等 CP2 闸门（第 11–12 周）" style="whiteSpace=wrap;fillColor=#f5f5f5;strokeColor=#666666;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="550" y="750" width="320" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" value="冲突清单喂批复" style="rounded=1;html=1;edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;endArrow=classic;" edge="1" parent="1" source="n3" target="n5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" value="Node 就绪" style="rounded=1;html=1;edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;endArrow=classic;" edge="1" parent="1" source="n4" target="n6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" value="基线锁定" style="rounded=1;html=1;edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;endArrow=classic;" edge="1" parent="1" source="n5" target="n6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" style="rounded=1;html=1;edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;endArrow=classic;" edge="1" parent="1" source="n5" target="n7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" style="rounded=1;html=1;edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;endArrow=classic;" edge="1" parent="1" source="n5" target="n8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" style="rounded=1;html=1;edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;endArrow=classic;" edge="1" parent="1" source="n6" target="n9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" style="rounded=1;html=1;edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;endArrow=classic;" edge="1" parent="1" source="n7" target="n9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" style="rounded=1;html=1;edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;endArrow=classic;" edge="1" parent="1" source="n8" target="n9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e9" value="审计结果毕业" style="rounded=1;html=1;dashed=1;edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;endArrow=classic;" edge="1" parent="1" source="n3" target="n10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e10" value="实施期再裁决" style="rounded=1;html=1;dashed=1;edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;endArrow=classic;" edge="1" parent="1" source="n9" target="n11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
