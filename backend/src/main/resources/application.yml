@@ -4,7 +4,11 @@ server:
 spring:
   application:
     name: travel-share-backend
-  # Datasource is configured but NOT validated at startup (ADR 0001): no table yet in travel_share.
+  servlet:
+    multipart:
+      max-file-size: 5MB
+      max-request-size: 6MB
+  # Datasource is configured but NOT validated at startup (ADR 0001).
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://127.0.0.1:3307/travel_share?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai&useSSL=false&allowPublicKeyRetrieval=true
@@ -23,6 +27,17 @@ mybatis-plus:
       logic-delete-field: deleted
       logic-delete-value: 1
       logic-not-delete-value: 0
+
+app:
+  # 上传目录从配置读取：换机器只改配置，不改代码。数据库只存 /uploads/xxx 相对 URL。
+  upload-dir: ./uploads
+  jwt:
+    # 演示项目配置化；真实项目应从环境变量注入。
+    secret: travel-share-graduation-design-jwt-secret-key-2026-change-in-production
+    expire-hours: 2
+
+knife4j:
+  enable: true
 
 logging:
   level:
